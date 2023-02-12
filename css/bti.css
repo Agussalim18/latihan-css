@@ -1,0 +1,63 @@
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:0.2fr 0.2fr 0.4fr 0.4fr 0.2fr;
+  grid-template-areas:
+    "item1 item1 item1 item1"
+    "item2 item2 item3 item3"
+    "item4 item4 item4 item8"
+    "item4 item4 item4 item9"
+    "item5 item6 item7 item10";
+  grid-gap: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  color:#ffeead;
+}
+#item1{
+  background:blue;
+  grid-area:item1;
+}
+#item2{
+  background:blue;
+  grid-area:item2;
+}#item3{
+  background:blue;
+  grid-area:item3;
+}#item4{
+  background:red;
+  grid-area:item4;
+}#item5{
+  background:blue;
+  grid-area:item5;
+}#item6{
+  background:blue;
+  grid-area:item6;
+}#item7{
+  background:blue;
+  grid-area:item7;
+}#item8{
+  background:red;
+  grid-area:item8;
+}
+#item9{
+  background:red;
+  grid-area:item9;
+} #item10{
+  background:red;
+  grid-area:item10;
+}
+@media only screen and (max-width: 550px){
+  .container{
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:0.2fr 0.1fr 0.1fr 0.8fr 0.4fr 0.4fr;
+    grid-template-areas:
+      "item1"
+      "item2 item2"
+      "item3 item3"
+      "item4"
+      "item5 item6 item7"
+      "item8 item9 item10";
+  }
+}

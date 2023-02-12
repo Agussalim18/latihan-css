@@ -1,0 +1,12 @@
+.container {
+  max-widht: 700px;
+  margin: 0 auto;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap : 1em;
+}
+.item {
+  border :2px solid yellow;
+  height : 15em;
+  text-align:center;
+}
